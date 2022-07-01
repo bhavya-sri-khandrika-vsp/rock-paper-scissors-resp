@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <!--Navbar starts here-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RPS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!--Navbar ends here-->
+      <div class="container" style="padding-bottom: 30px;"></div>
+    <!--Hero Section starts here-->
+    
+      <div class="container text-center">
+        <h1>Welcome to Rock Paper Scissors Game</h1>
+        <p>Play with your friends and have fun today</p>
+      </div>
+      <div class="container" style="padding-bottom: 60px;"></div>
+    <section class="container sec1">
+      <div class="container">
+        <div class="row">
+          <div class="container col-sm-4">
+            <img src="https://i.pinimg.com/originals/16/9e/7e/169e7e7ea2e3a53d9b0656a4518630a6.gif" width="70%" height="300px" alt="Player1">
+            <div class="container" style="padding-bottom: 50px;"></div>
+            <form action="/action_page.php" class="form1">
+                <label for="fname" style="margin-bottom: 30px;">Enter the Player 1 Name</label><br>
+                <input type="text" id="fname1" name="fname1" placeholder="Enter name" style="margin-bottom: 30px;border: 3px solid #383985; border-radius: 30px;"><br>
+                <input type="submit" value="Submit">
+            </form> 
+            
+        </div>
+        <div class="container sec2 col-sm-4">
+          <button type="submit" class="btn" onclick="goto()">Lets roll on!</button>
+        </div>
+        <div class="container col-sm-4">
+          <img src="https://c.tenor.com/4sF_R7-FScIAAAAC/lisa-cute.gif"  width="70%" height="300px" alt="Player1">
+          <div class="container" style="padding-bottom: 50px;"></div>
+            <form action="/action_page.php" class="form2" >
+                <label for="fname" style="margin-bottom: 30px;">Enter the Player 2 Name</label><br>
+                <input type="text" id="fname2" name="fname2" placeholder="Enter name" style="margin-bottom: 30px; border: 3px solid #383985;border-radius: 30px;"><br>
+                <input type="submit" value="Submit">
+            </form> 
+          </div>
+        </div>
+      </div>   
+    </section>
+
+    <!--Hero Section starts here-->
+
+
+    <script src="index.js"></script>
+</body>
+</html>
