@@ -1,44 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap");
 
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.sec1{
-    /* display: inline-flex; */
-    padding-left: 100px;
-    /* background-color: blueviolet; */
-    display: flex;
+.sec1 {
+  /* display: inline-flex; */
+  padding-left: 100px;
+  /* background-color: blueviolet; */
+  display: flex;
   justify-content: center;
   align-items: center;
-    
 }
 
-section > div{
-    margin-right: 30px;
+section > div {
+  margin-right: 30px;
 }
 
-.form1, .form2{
-    /* font-family: 'Playfair Display', serif; */
-    font-family: 'Libre Baskerville', serif;
+.form1,
+.form2 {
+  /* font-family: 'Playfair Display', serif; */
+  font-family: "Libre Baskerville", serif;
 }
 
-.btn{
-    margin-top: 300px; 
-    padding: 40px; 
-    border-radius: 40px; 
-    border: 4px solid #945694;
-    background-color: antiquewhite;
-    font-family: 'Libre Baskerville', serif;
+.btn {
+  margin-top: 300px;
+  padding: 40px;
+  border-radius: 40px;
+  border: 4px solid #945694;
+  background-color: antiquewhite;
+  font-family: "Libre Baskerville", serif;
 }
 
 /*Gaming Section*/
 
-.sec3{
+.sec3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,15 +46,53 @@ section > div{
   padding-top: 20px;
 }
 
-
-.img1{
-    width: 170px;
-    height: 170px;
-    background-color: #945694;
+.img1 {
+  width: 170px;
+  height: 170px;
+  background-color: #945694;
 }
 
-.img2{
-    width: 170px;
-    height: 170px;
-    background-color: #945694;
+.img2 {
+  width: 170px;
+  height: 170px;
+  background-color: #945694;
+}
+
+
+/*overall styling*/
+.bigdiv{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div1{
+position: absolute;
+width: 100%;
+background-color: #ffff;
+}
+
+.div2{
+  /* position: absolute; */
+  width: 100%;
+}
+
+#cont1, #cont2{
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.c1{
+  width: 100%;
+  height: 100vh;
+  background-color: #945694;
+}
+
+.title1{
+  text-align: center;
+  padding-top: 10%;
+  font-size: 80px;
 }

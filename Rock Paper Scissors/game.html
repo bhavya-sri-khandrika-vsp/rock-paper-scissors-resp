@@ -1,84 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-     <!--Navbar starts here-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Navbar starts here-->
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">RPS</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Play</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">RPS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Play</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <!--Navbar ends here-->
-      <div class="container" style="padding-bottom: 30px;"></div>
+    <div class="container" style="padding-bottom: 30px"></div>
     <!--Hero Section starts here-->
-    <section class="container sec3 ">
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-2 col-lg-2">
-                <h1 class="play1">Player 1</h1>
-                <img src="boy.png" alt="" srcset="" width="230px">
-              </div>
-              <div class="col-sm-2 col-lg-2">
-                <img src="rock.png" alt="rock" class="img1" onclick="disp(rock.png)"><br>
-                <img src="paper.png" alt="rock" class="img1" onclick="disp(paper.png)"><br>
-                <img src="scissors.png" alt="rock" class="img1" onclick="disp(scissors.png)"><br>
-                
-              </div>
-              <!--Result of Player 1 starts here-->
-              <div class="res1 col-sm-2 col-lg-2">
-                <div class="cont1" ></div>
-
-              </div>
-               <!--Result of Player 1 ends here-->
-                <!--Result of Player 2 starts here-->
-              <div class="res2 col-sm-2 col-lg-2">
-
-              </div>
-               <!--Result of Player 2 ends here-->
-              <div class="col-sm-2 col-lg-2">
-                <img src="rock.png" alt="rock" class="img2"><br>
-                <img src="paper.png" alt="rock" class="img2"><br>
-                <img src="scissors.png" alt="rock" class="img2"><br>
-              </div>
-              <div class="col-sm-2 col-lg-2">
-                <h1 class="play2">Player 2</h1>
-                <img src="girl.png" alt="" srcset="" width="230px">
-              </div>
-            </div>
+    <section class="container sec3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 col-lg-2">
+            <h1 class="play1">Player 1</h1>
+            <img src="boy.png" alt="" srcset="" width="230px" />
           </div>
+          <div class="col-sm-2 col-lg-2">
+            <img
+              src="rock.png"
+              alt="rock"
+              class="img1"
+              onclick="disp()"
+            /><br />
+            <img
+              src="paper.png"
+              alt="rock"
+              class="img1"
+              onclick="disp1()"
+            /><br />
+            <img
+              src="scissors.png"
+              alt="rock"
+              class="img1"
+              onclick="disp2()"
+            /><br />
+          </div>
+          <!--Result of Player 1 starts here-->
+          <div class="res1 col-sm-2 col-lg-2">
+            <img id="cont1"></img>
+            <h3 id="user-input"></h3>
+          </div>
+          <!--Result of Player 1 ends here-->
+          <!--Result of Player 2 starts here-->
+          <div class="res2 col-sm-2 col-lg-2">
+            <img id="cont2"></img>
+            <h3 id="com-input"></h3>
+            
+          </div>
+          <!--Result of Player 2 ends here-->
+          <div class="col-sm-2 col-lg-2">
+            <img src="rock.png" alt="rock" class="img2" /><br />
+            <img src="paper.png" alt="rock" class="img2"/><br />
+            <img src="scissors.png" alt="rock" class="img2">
+            <br />
+          </div>
+          <div class="col-sm-2 col-lg-2">
+            <h1 class="play2">Player 2</h1>
+            <img src="girl.png" alt="" srcset="" width="230px" />
+          </div>
+        </div>
+      </div>
     </section>
-
+    <center><h1 id="result"></h1>
+        <button id="play-again" onclick="window.location.reload()">Play Again</button>
+    </center>
     <!--Hero Section starts here-->
-
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
